@@ -9,4 +9,10 @@ export class Cliente{
           this.nome = nomeCliente;
           this.telefone = "";
      }
+    
+     criarCliente(nome: string, telefone: string): Cliente {
+          const cliente: Cliente = new Cliente(nome);
+          cliente.telefone = telefone;
+          return cliente;
+      }
 }   

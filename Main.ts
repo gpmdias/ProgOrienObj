@@ -1,5 +1,12 @@
 import { Cliente } from "./Cliente";
 
-const cli: Cliente = new Cliente("Gladimir");
-cli.telefone = "1234-5678";
-console.table(cli);
+function criarCliente(nome: string, telefone: string): Cliente {
+    const cliente: Cliente = new Cliente(nome);
+    cliente.telefone = telefone;
+    return cliente;
+}
+
+const clientes: Cliente[] = [];
+clientes.push(criarCliente("Bruna", "123456789"));
+clientes.push(criarCliente("Edécio", "123456789"));
+clientes.push(criarCliente("Gladimir", "123456789"));
