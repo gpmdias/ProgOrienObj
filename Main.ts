@@ -1,7 +1,7 @@
 import { Cliente } from "./Cliente";
 
 function criarCliente(nome: string, telefone: string): Cliente {
-    const cliente: Cliente = new Cliente(nome);
+    const cliente: Cliente = new Cliente();
     cliente.telefone = telefone;
     return cliente;
 }
